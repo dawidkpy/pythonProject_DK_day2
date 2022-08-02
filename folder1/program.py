@@ -1,0 +1,2 @@
+
+print("nic nie rozumiem")
