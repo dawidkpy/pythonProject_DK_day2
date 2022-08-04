@@ -2,17 +2,26 @@
 import csv
 import json
 
-slownik = []
+def f_read(t_dict):
 
-with open("my_csv.csv", encoding="utf-8") as file:
-    moj_csv = csv.DictReader(file)
+    with open("my_csv.csv", encoding="utf-8") as file:
+        t_csv = csv.DictReader(file)
+        for r in t_csv:
+            t_dict.append(r)
+    return t_dict
 
-    for r in moj_csv:
-        slownik.append(r)
 
-print(slownik)
+def f_write(t_dict):
+    with open("my_json.json", "w", encoding="utf-8") as file2:
+        file2.write(json.dumps(t_dict, indent=4))
 
-with open("my_json.json", "w", encoding="utf-8") as file2:
-    file2.write(json.dumps(slownik, indent=4))
-    #file2.write(json.dumps(slownik))
 
+if __name__ == "__main__":
+
+    slownik = []
+
+    slownik = f_read(slownik)
+
+    print(slownik)
+
+    f_write(slownik)
