@@ -24,4 +24,13 @@ if __name__ == "__main__":
 
     print(slownik)
 
+    for i in slownik:
+        try:
+            j = int(i["Ilosc"])
+            j += 10
+            i["Ilosc"] = str(j)
+        except ValueError:
+            print(f"W polu ILOŚĆ dla pozycji {i} znajduje sie wartosc nieliczbowa!")
+
+
     f_write(slownik)
