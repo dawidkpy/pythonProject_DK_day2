@@ -1,0 +1,26 @@
+[
+    {
+        "Lp": "1",
+        "Marka": "Audi",
+        "Model": "A3",
+        "Ilosc": "111"
+    },
+    {
+        "Lp": "2",
+        "Marka": "BMW",
+        "Model": "3",
+        "Ilosc": "222"
+    },
+    {
+        "Lp": "3",
+        "Marka": "Audi",
+        "Model": "A4",
+        "Ilosc": "33"
+    },
+    {
+        "Lp": "4",
+        "Marka": "BMW",
+        "Model": "5",
+        "Ilosc": "66"
+    }
+]
